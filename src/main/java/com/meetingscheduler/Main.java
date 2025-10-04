@@ -9,8 +9,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("MeetingSchedulerDSA - Interactive Console UI (Maven)"); 
         System.out.println("Usage: mvn package && java -jar target/MeetingSchedulerDSA-1.0-SNAPSHOT-jar-with-dependencies.jar [input.json] [output.json]"); 
-        String defaultIn = args.length>0?args[0]:"input.json";
-        String defaultOut = args.length>1?args[1]:"output.json";
+        String defaultIn = args.length>0?args[0]:"input/input.json";
+        String defaultOut = args.length>1?args[1]:"output/output.json";
         String inputPath = defaultIn;
         String outputPath = defaultOut;
         while (true) {
