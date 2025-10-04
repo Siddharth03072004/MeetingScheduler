@@ -1,0 +1,21 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+target/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated files
+*.class
+
+# Temporary files
+*.tmp

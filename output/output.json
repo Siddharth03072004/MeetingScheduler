@@ -1,0 +1,52 @@
+{
+  "rooms" : [ "Room-A", "Room-B", "Room-3" ],
+  "schedule" : [ {
+    "title" : "Ops",
+    "time" : {
+      "start" : 15,
+      "end" : 16
+    },
+    "priority" : 3,
+    "participants" : [ "Bob", "Alice" ],
+    "assignedRoom" : "Room-A"
+  }, {
+    "title" : "Project Kickoff",
+    "time" : {
+      "start" : 9,
+      "end" : 11
+    },
+    "priority" : 2,
+    "participants" : [ "Alice", "Bob" ],
+    "assignedRoom" : "Room-B"
+  }, {
+    "title" : "Design Review",
+    "time" : {
+      "start" : 10,
+      "end" : 12
+    },
+    "priority" : 1,
+    "participants" : [ "Bob", "Carol" ],
+    "assignedRoom" : "Room-3"
+  }, {
+    "title" : "Sync",
+    "time" : {
+      "start" : 11,
+      "end" : 13
+    },
+    "priority" : 1,
+    "participants" : [ "Alice", "Carol" ],
+    "assignedRoom" : "Room-B"
+  } ],
+  "minRooms" : 2,
+  "conflicts" : [ {
+    "participant" : "Bob",
+    "conflictingMeetings" : [ "Project Kickoff", "Design Review" ]
+  }, {
+    "participant" : "Carol",
+    "conflictingMeetings" : [ "Design Review", "Sync" ]
+  } ],
+  "bestSlot" : {
+    "start" : 8,
+    "end" : 18
+  }
+}

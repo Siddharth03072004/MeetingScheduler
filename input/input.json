@@ -1,0 +1,67 @@
+{
+  "rooms": [
+    "Room-A",
+    "Room-B"
+  ],
+  "employees": [
+    {
+      "name": "Alice",
+      "availability": [
+        { "start": 9, "end": 12 },
+        { "start": 14, "end": 17 }
+      ]
+    },
+    {
+      "name": "Bob",
+      "availability": [
+        { "start": 10, "end": 13 },
+        { "start": 15, "end": 18 }
+      ]
+    },
+    {
+      "name": "Carol",
+      "availability": [
+        { "start": 8, "end": 11 },
+        { "start": 13, "end": 16 }
+      ]
+    }
+  ],
+  "meetings": [
+    {
+      "title": "Project Kickoff",
+      "time": [9, 11],
+      "priority": 2,
+      "participants": [
+        "Alice",
+        "Bob"
+      ]
+    },
+    {
+      "title": "Design Review",
+      "time": [10, 12],
+      "priority": 1,
+      "participants": [
+        "Bob",
+        "Carol"
+      ]
+    },
+    {
+      "title": "Sync",
+      "time": [11, 13],
+      "priority": 1,
+      "participants": [
+        "Alice",
+        "Carol"
+      ]
+    },
+    {
+      "title": "Ops",
+      "time": [15, 16],
+      "priority": 3,
+      "participants": [
+        "Bob",
+        "Alice"
+      ]
+    }
+  ]
+}
